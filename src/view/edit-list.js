@@ -1,14 +1,14 @@
 import { createElement } from '../render.js'
 
-function createNewFormTemplate() {
+function createEditFormTemplate() {
   return `
-    <button class="trip-main__event-add-btn  btn  btn--big  btn--yellow" type="button">New event</button>
+    <ul class="trip-events__list"></ul>
     `;
 }
 
-export default class NewForm {
+export default class EditList {
   getTemplate() {
-    return createNewFormTemplate();
+    return createEditFormTemplate();
   }
 
   getElement() {

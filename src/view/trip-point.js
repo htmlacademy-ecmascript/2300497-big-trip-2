@@ -1,7 +1,7 @@
-import {createElement} from '../render.js'
+import { createElement } from '../render.js'
 
-function createTripPointsTemplate () {
-    return `
+function createTripPointsTemplate() {
+  return `
     <li class="trip-events__item">
     <div class="event">
       <time class="event__date" datetime="2019-03-18">MAR 18</time>
@@ -39,6 +39,22 @@ function createTripPointsTemplate () {
       </button>
     </div>
   </li>
-  `
+  `;
 }
 
+export default class TripPointForm {
+  getTemplate() {
+    return createTripPointsTemplate();
+  }
+
+  getElement() {
+    if (!this.element) {
+      this.element = createElement(this.getTemplate());
+    }
+    return this.element;
+  }
+
+  removeElement() {
+    this.element = null;
+  }
+}
