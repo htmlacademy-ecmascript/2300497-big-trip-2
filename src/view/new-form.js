@@ -1,14 +1,12 @@
-import { createElement } from '../render.js'
+import {createElement} from '../render.js';
 
-function createNewFormTemplate() {
-  return `
-    <button class="trip-main__event-add-btn  btn  btn--big  btn--yellow" type="button">New event</button>
-    `;
+function createNewTaskButtonTemplate() {
+  return '<button class="control__button">+ ADD NEW TASK</button>';
 }
 
-export default class NewForm {
+export default class NewTaskButtonView {
   getTemplate() {
-    return createNewFormTemplate();
+    return createNewTaskButtonTemplate();
   }
 
   getElement() {
@@ -22,3 +20,4 @@ export default class NewForm {
     this.element = null;
   }
 }
+

@@ -1,5 +1,3 @@
-import FiltersForm from '../view/filters.js';
-import NewForm from '../view/new-form.js';
 import SortForm from '../view/sort.js';
 import TripPointForm from '../view/trip-point.js';
 import EditForm from '../view/edit-form.js';
@@ -8,7 +6,6 @@ import { render } from '../render.js';
 
 
 export default class BoardPresenter {
-  filters = new FiltersForm();
   sortComponent = new SortForm();
   editListComponent = new EditList();
 
@@ -17,7 +14,6 @@ export default class BoardPresenter {
   }
 
   init() {
-    render(this.filters, this.container);
     render(this.sortComponent, this.container);
     render(this.editListComponent, this.container);
     render(new EditForm(), this.editListComponent.getElement());
