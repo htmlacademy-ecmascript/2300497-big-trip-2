@@ -9,17 +9,20 @@ export default class BoardPresenter {
   sortComponent = new SortForm();
   editListComponent = new EditList();
 
-  constructor({ container }) {
+  constructor({ container, taskModel}) {
     this.container = container;
+    this.taskModel = taskModel;
   }
 
   init() {
+    this.boardTasks = [...this.taskModel.getTasks()];
+
     render(this.sortComponent, this.container);
     render(this.editListComponent, this.container);
     render(new EditForm(), this.editListComponent.getElement());
 
-    for (let i = 0; i < 3; i++) {
-      render(new TripPointForm(), this.editListComponent.getElement());
+    for (let i = 0; i < this.boardTasks.length; i++) {
+      render(new TripPointForm({task: this.boardTasks[i]}), this.editListComponent.getElement());
     }
   }
 }
