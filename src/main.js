@@ -11,7 +11,7 @@ const newTaskButtonElement = document.querySelector('.trip-main__event-add-btn')
 const tasksModel = new TasksModel();
 const boardPresenter = new BoardPresenter({
   container: siteMainElement,
-  tasksModel,
+  taskModel: tasksModel,
 });
 
 render(new NewTaskButtonView(), newTaskButtonElement);

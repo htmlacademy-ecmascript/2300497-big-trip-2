@@ -4,12 +4,11 @@ import EditForm from '../view/edit-form.js';
 import EditList from '../view/edit-list.js';
 import { render } from '../render.js';
 
-
 export default class BoardPresenter {
   sortComponent = new SortForm();
   editListComponent = new EditList();
 
-  constructor({ container, taskModel}) {
+  constructor({ container, taskModel }) {
     this.container = container;
     this.taskModel = taskModel;
   }
@@ -21,8 +20,9 @@ export default class BoardPresenter {
     render(this.editListComponent, this.container);
     render(new EditForm(), this.editListComponent.getElement());
 
+    // Рендерим каждый компонент с данными из модели
     for (let i = 0; i < this.boardTasks.length; i++) {
-      render(new TripPointForm({task: this.boardTasks[i]}), this.editListComponent.getElement());
+      render(new TripPointForm({ task: this.boardTasks[i] }), this.editListComponent.getElement());
     }
   }
 }
