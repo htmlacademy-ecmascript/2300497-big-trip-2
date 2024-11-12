@@ -26,7 +26,7 @@ const offers = [
     ]
   },
   {
-    type: "taxi",
+    type: "Bus",
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
@@ -36,7 +36,7 @@ const offers = [
     ]
   },
   {
-    type: "taxi",
+    type: "Train",
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
@@ -46,7 +46,57 @@ const offers = [
     ]
   },
   {
-    type: "taxi",
+    type: "Ship",
+    offers: [
+      {
+        id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
+        title: "Upgrade to a business class",
+        price: 120
+      }
+    ]
+  },
+  {
+    type: "Drive",
+    offers: [
+      {
+        id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
+        title: "Upgrade to a business class",
+        price: 120
+      }
+    ]
+  },
+  {
+    type: "Flight",
+    offers: [
+      {
+        id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
+        title: "Upgrade to a business class",
+        price: 120
+      }
+    ]
+  },
+  {
+    type: "Check-in",
+    offers: [
+      {
+        id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
+        title: "Upgrade to a business class",
+        price: 120
+      }
+    ]
+  },
+  {
+    type: "Sightseeing",
+    offers: [
+      {
+        id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
+        title: "Upgrade to a business class",
+        price: 120
+      }
+    ]
+  },
+  {
+    type: "Restaurant",
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
@@ -56,3 +106,9 @@ const offers = [
     ]
   },
 ];
+
+function getRandomOffers () {
+  return getRandomArrayElement(offers);
+}
+
+export {getRandomOffers};

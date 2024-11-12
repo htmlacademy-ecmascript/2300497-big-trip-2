@@ -35,3 +35,9 @@ const destinations = [
     ]
   }
 ];
+
+function getRandomDestinations () {
+  return getRandomArrayElement(destinations);
+}
+
+export {getRandomDestinations};

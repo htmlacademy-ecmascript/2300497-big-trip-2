@@ -48,3 +48,9 @@ const points = [
     type: "taxi"
   }
 ];
+
+function getRandomPoints () {
+  return getRandomArrayElement(points);
+}
+
+export {getRandomPoints};
