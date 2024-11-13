@@ -1,13 +1,39 @@
-import { getRandomTask } from '../mock/tasks.js';
+import { destinations } from '../mock/destinations.js';
+import { offers } from '../mock/offers.js';
+import { getRandomPoints } from '../mock/points.js';
 
-const TASK_COUNT = 3;
+
+const POINT_COUNT = 3;
 
 export default class TaskModel {
-  constructor() {
-    this.tasks = Array.from({ length: TASK_COUNT }, getRandomTask);
+  point = Array.from({length: POINT_COUNT}, getRandomPoints);
+  offers = offers;
+  destination = destinations;
+
+  getPoint() {
+    return this.point;
   }
 
-  getTasks() {
-    return this.tasks;
+  getOffer () {
+    return this.offers;
+  }
+
+  getOfferByType(type) {
+    const allOffers = this.getOffer();
+    return allOffers.find((offer) => offer.type === type);
+  }
+
+  getOfferById(type, itemsId) {
+    const offersType = this.getOfferByType(type);
+    return offersType.offers.filter((item) => itemsId.find((id) =>item.id === type));
+  }
+
+  getDestination() {
+    return this.destination;
+  }
+
+  getDestinationById(id) {
+    const allDestination = this.getDestination();
+    return allDestination.find((item) => item.id === id);
   }
 }

@@ -12,14 +12,14 @@ const offers = [
     ],
     offers: [
       {
-        id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
+        id: "b4c3e4e6-9053-42ce-b747-e281314baa32",
         title: "Upgrade to a business class",
         price: 120
       }
     ],
     offers: [
       {
-        id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
+        id: "b4c3e4e6-9053-42ce-b747-e281314baa33",
         title: "Upgrade to a business class",
         price: 120
       }
@@ -29,7 +29,7 @@ const offers = [
     type: "Bus",
     offers: [
       {
-        id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
+        id: "b4c3e4e6-9053-42ce-b747-e281314baa34",
         title: "Upgrade to a business class",
         price: 120
       }
@@ -39,7 +39,7 @@ const offers = [
     type: "Train",
     offers: [
       {
-        id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
+        id: "b4c3e4e6-9053-42ce-b747-e281314baa35",
         title: "Upgrade to a business class",
         price: 120
       }
@@ -49,17 +49,22 @@ const offers = [
     type: "Ship",
     offers: [
       {
-        id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
+        id: "b4c3e4e6-9053-42ce-b747-e281314baa36",
         title: "Upgrade to a business class",
         price: 120
-      }
+      },
+      {
+        id: "b4c3e4e6-9053-42ce-b747-e281314bab36",
+        title: "Upgrade to a business class",
+        price: 120
+      },
     ]
   },
   {
     type: "Drive",
     offers: [
       {
-        id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
+        id: "b4c3e4e6-9053-42ce-b747-e281314baa37",
         title: "Upgrade to a business class",
         price: 120
       }
@@ -69,7 +74,7 @@ const offers = [
     type: "Flight",
     offers: [
       {
-        id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
+        id: "b4c3e4e6-9053-42ce-b747-e281314baa38",
         title: "Upgrade to a business class",
         price: 120
       }
@@ -79,7 +84,7 @@ const offers = [
     type: "Check-in",
     offers: [
       {
-        id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
+        id: "b4c3e4e6-9053-42ce-b747-e281314baa39",
         title: "Upgrade to a business class",
         price: 120
       }
@@ -89,7 +94,7 @@ const offers = [
     type: "Sightseeing",
     offers: [
       {
-        id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
+        id: "b4c3e4e6-9053-42ce-b747-e281314baa40",
         title: "Upgrade to a business class",
         price: 120
       }
@@ -97,18 +102,8 @@ const offers = [
   },
   {
     type: "Restaurant",
-    offers: [
-      {
-        id: "b4c3e4e6-9053-42ce-b747-e281314baa31",
-        title: "Upgrade to a business class",
-        price: 120
-      }
-    ]
+    offers: []
   },
 ];
 
-function getRandomOffers () {
-  return getRandomArrayElement(offers);
-}
-
-export {getRandomOffers};
+export {offers};

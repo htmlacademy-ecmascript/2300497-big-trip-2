@@ -14,15 +14,25 @@ export default class BoardPresenter {
   }
 
   init() {
-    this.boardTasks = [...this.taskModel.getTasks()];
+    this.boardTasks = [...this.taskModel.getPoint()];
 
     render(this.sortComponent, this.container);
     render(this.editListComponent, this.container);
-    render(new EditForm(), this.editListComponent.getElement());
+
+    render(new EditForm({
+      point: this.boardTasks[0],
+      checkedOffers: [...this.taskModel.getOfferById(this.boardTasks[0].type, this.boardTasks[0].offers)],
+      offers: this.taskModel.getOfferByType(this.boardTasks[0].type),
+      destination: this.taskModel.getDestinationById(this,this.boardTasks[0].destination)
+    }), this.editListComponent.getElement());
 
     // Рендерим каждый компонент с данными из модели
     for (let i = 0; i < this.boardTasks.length; i++) {
-      render(new TripPointForm({ task: this.boardTasks[i] }), this.editListComponent.getElement());
+      render(new TripPointForm({ 
+        point: this.boardTasks[i],
+        offers: [...this.taskModel.getOfferById(this.boardTasks[i].type, this.boardTasks[i].offers)],
+        destination: this.taskModel.getDestinationById(this.boardTasks[i].destination) 
+      }), this.editListComponent.getElement());
     }
   }
 }
