@@ -1,5 +1,3 @@
-import { getRandomArrayElement } from "../utils.js";
-
 const destinations = [
   {
     id: "cfe416cq-10xa-ye10-8077-2fs9a01edcab",

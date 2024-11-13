@@ -28,10 +28,10 @@ export default class BoardPresenter {
 
     // Рендерим каждый компонент с данными из модели
     for (let i = 0; i < this.boardTasks.length; i++) {
-      render(new TripPointForm({ 
+      render(new TripPointForm({
         point: this.boardTasks[i],
         offers: [...this.taskModel.getOfferById(this.boardTasks[i].type, this.boardTasks[i].offers)],
-        destination: this.taskModel.getDestinationById(this.boardTasks[i].destination) 
+        destination: this.taskModel.getDestinationById(this.boardTasks[i].destination)
       }), this.editListComponent.getElement());
     }
   }
