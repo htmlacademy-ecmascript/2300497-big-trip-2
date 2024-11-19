@@ -104,4 +104,4 @@ const offers = [
   },
 ];
 
-export {offers};
+export { offers };

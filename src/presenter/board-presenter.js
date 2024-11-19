@@ -21,9 +21,9 @@ export default class BoardPresenter {
 
     render(new EditForm({
       point: this.boardTasks[0],
-      checkedOffers: [...this.taskModel.getOfferById(this.boardTasks[0].type, this.boardTasks[0].offers)],
-      offers: this.taskModel.getOfferByType(this.boardTasks[0].type),
-      destination: this.taskModel.getDestinationById(this,this.boardTasks[0].destination)
+      checkedOffers: [...(this.taskModel.getOfferById(this.boardTasks[0].type, this.boardTasks[0].offers) || [])],
+      offers: this.taskModel.getOfferByType(this.boardTasks[0].type) || [],
+      destination: this.taskModel.getDestinationById(this.boardTasks[0].destination) || {}
     }), this.editListComponent.getElement());
 
     // Рендерим каждый компонент с данными из модели

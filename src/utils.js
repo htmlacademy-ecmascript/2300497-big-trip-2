@@ -1,6 +1,8 @@
 import dayjs from "dayjs";
 import duration from "dayjs/plugin/duration";
 
+const POINTS_TYPE = ['taxi', 'bus', 'train', 'ship', 'drive', 'flight', 'check-in', 'sightseeing', 'restaurant'];
+
 const DATE_FORMAT = 'D MMMM';
 
 dayjs.extend(duration);
@@ -23,4 +25,9 @@ function getDifferenceInTime(dateFrom, dateTo) {
   return `${hours > 0 ? `${hours}ч ` : ''}${minutes}м`;
 }
 
-export {getDifferenceInTime, getRandomArrayElement, humanizeTaskDueDate, DATE_FORMAT};
+function capitalize(word) {
+  if (!word || typeof word !== 'string') return '';
+  return word[0].toUpperCase() + word.slice(1);
+}
+
+export {getDifferenceInTime, getRandomArrayElement, humanizeTaskDueDate, DATE_FORMAT, capitalize, POINTS_TYPE};
