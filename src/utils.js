@@ -1,5 +1,5 @@
-import dayjs from "dayjs";
-import duration from "dayjs/plugin/duration";
+import dayjs from 'dayjs';
+import duration from 'dayjs/plugin/duration';
 
 const POINTS_TYPE = ['taxi', 'bus', 'train', 'ship', 'drive', 'flight', 'check-in', 'sightseeing', 'restaurant'];
 

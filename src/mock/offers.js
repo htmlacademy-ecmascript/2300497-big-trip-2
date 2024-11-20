@@ -12,14 +12,14 @@ const offers = [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa32",
         title: "Upgrade to a business class",
-        price: 120
+        price: 56
       }
     ],
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa33",
         title: "Upgrade to a business class",
-        price: 120
+        price: 250
       }
     ]
   },
@@ -29,7 +29,7 @@ const offers = [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa34",
         title: "Upgrade to a business class",
-        price: 120
+        price: 1220
       }
     ]
   },
@@ -39,7 +39,7 @@ const offers = [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa35",
         title: "Upgrade to a business class",
-        price: 120
+        price: 10
       }
     ]
   },
@@ -49,12 +49,12 @@ const offers = [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa36",
         title: "Upgrade to a business class",
-        price: 120
+        price: 20
       },
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314bab36",
         title: "Upgrade to a business class",
-        price: 120
+        price: 179
       },
     ]
   },
@@ -64,7 +64,7 @@ const offers = [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa37",
         title: "Upgrade to a business class",
-        price: 120
+        price: 56
       }
     ]
   },
@@ -74,7 +74,7 @@ const offers = [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa38",
         title: "Upgrade to a business class",
-        price: 120
+        price: 78
       }
     ]
   },
@@ -84,7 +84,7 @@ const offers = [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa39",
         title: "Upgrade to a business class",
-        price: 120
+        price: 780
       }
     ]
   },
@@ -94,7 +94,7 @@ const offers = [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa40",
         title: "Upgrade to a business class",
-        price: 120
+        price: 200
       }
     ]
   },
