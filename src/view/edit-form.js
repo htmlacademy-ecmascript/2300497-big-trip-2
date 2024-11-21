@@ -6,7 +6,7 @@ function createTypeTemplate(type) {
     `
      <div class="event__type-item">
             <input id="event-type-${type}-1" class="event__type-input  visually-hidden" type="radio" name="event-type" value="${type}">
-            <label class="event__type-label  event__type-label--${type}" for="event-type--${type}-1">${capitalize(type)}</label>
+            <label class="event__type-label  event__type-label--${type}" for="event-type-${type}-1">${capitalize(type)}</label>
           </div>
     `
   );
@@ -19,8 +19,8 @@ function createOfferTemplate(offer, checkedOffers) {
 
   return (
     `<div class="event__offer-selector">
-          <input class="event__offer-checkbox  visually-hidden" id=1 type="checkbox" name=1 ${isChecked}>
-          <label class="event__offer-label" for=1>
+          <input class="event__offer-checkbox  visually-hidden" id="${id}" type="checkbox" name="offer-${id}" ${isChecked}>
+          <label class="event__offer-label" for="${id}">
             <span class="event__offer-title">${title}</span>
             &plus;&euro;&nbsp;
             <span class="event__offer-price">${price}</span>
@@ -67,7 +67,7 @@ function createPhotoContainerTemplate(pictures) {
 function createDestinationTemplate(destination) {
   const { description, pictures } = destination;
 
-  if (description > 0 || pictures.length > 0) {
+  if (description || pictures.length > 0) {
     return (
       `
     <section class="event__section  event__section--destination">
@@ -122,10 +122,10 @@ function createEditFormTemplate(point, offers, checkedOffers, destination) {
 
     <div class="event__field-group  event__field-group--time">
       <label class="visually-hidden" for="event-start-time-1">From</label>
-      <input class="event__input  event__input--time" id="event-start-time-1" type="text" name="event-start-time" value=${humanizeTaskDueDate(dateForm, DATE_FORMAT)}>
+       <input class="event__input  event__input--time" id="event-start-time-1" type="datetime-local" name="event-start-time" value=${humanizeTaskDueDate(dateForm, DATE_FORMAT)}>
       &mdash;
       <label class="visually-hidden" for="event-end-time-1">To</label>
-      <input class="event__input  event__input--time" id="event-end-time-1" type="text" name="event-end-time" value=${humanizeTaskDueDate(dateTo, DATE_FORMAT)}>
+      <input class="event__input  event__input--time" id="event-end-time-1" type="datetime-local" name="event-end-time" value=${humanizeTaskDueDate(dateTo, DATE_FORMAT)}>
     </div>
 
     <div class="event__field-group  event__field-group--price">

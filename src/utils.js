@@ -18,11 +18,12 @@ function humanizeTaskDueDate(dueDate) {
 function getDifferenceInTime(dateFrom, dateTo) {
   const diff = dayjs.duration(dayjs(dateTo).diff(dayjs(dateFrom)));
 
-  // Форматируем результат в виде "HH ч MM м"
+  // Format result as "DD d HH h MM m"
+  const days = diff.days();
   const hours = diff.hours();
   const minutes = diff.minutes();
 
-  return `${hours > 0 ? `${hours}ч ` : ''}${minutes}м`;
+  return `${days > 0 ? `${days}d ` : ''}${hours > 0 ? `${hours}h ` : ''}${minutes}m`;
 }
 
 function capitalize(word) {

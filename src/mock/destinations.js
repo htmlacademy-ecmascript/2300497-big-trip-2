@@ -5,7 +5,11 @@ const destinations = [
     name: "Chamonix",
     pictures: [
       {
-        src: "http://picsum.photos/300/200?r=0.0762563005163317",
+        src: "/img/photos/1.jpg",
+        description: "Chamonix parliament building"
+      },
+      {
+        src: "/img/photos/4.jpg",
         description: "Chamonix parliament building"
       }
     ]
@@ -16,9 +20,13 @@ const destinations = [
     name: "Moscow",
     pictures: [
       {
-        src: "http://picsum.photos/300/200?r=0.0762563005163317",
+        src: "/img/photos/2.jpg",
         description: "Moscow parliament building"
-      }
+      },
+      {
+        src: "/img/photos/3.jpg",
+        description: "Moscow parliament building"
+      },
     ]
   },
   {
@@ -31,7 +39,12 @@ const destinations = [
     id: "cfe416cq-10xa-ye10-8077-2fs9a01edcal",
     description: "Rndml, is a beautiful city, a true asian pearl, with crowded streets.",
     name: "Rndml",
-    pictures: []
+    pictures: [
+      {
+        src: "/img/photos/5.jpg",
+        description: "Chamonix parliament building"
+      }
+    ]
   }
 ];
 

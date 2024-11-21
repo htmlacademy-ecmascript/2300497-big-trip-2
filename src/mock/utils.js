@@ -1,5 +1,3 @@
-function getRandomArrayElement(items) {
-  return items[Math.floor(Math.random() * items.length)];
-}
+import { getRandomArrayElement } from '../utils.js';
 
 export { getRandomArrayElement };
