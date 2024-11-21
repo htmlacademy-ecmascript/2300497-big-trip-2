@@ -26,6 +26,12 @@ const destinations = [
     description: "BigCity, is a beautiful city, a true asian pearl, with crowded streets.",
     name: "BigCity",
     pictures: []
+  },
+  {
+    id: "cfe416cq-10xa-ye10-8077-2fs9a01edcal",
+    description: "Rndml, is a beautiful city, a true asian pearl, with crowded streets.",
+    name: "Rndml",
+    pictures: []
   }
 ];
 

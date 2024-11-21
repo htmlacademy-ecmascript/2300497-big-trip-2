@@ -20,13 +20,17 @@ export default class TaskModel {
 
   getOfferByType(type) {
     const allOffers = this.getOffer();
-    return allOffers.find((offer) => offer.type === type);
+    return allOffers.find((offers) => offers.type === type);
   }
 
   getOfferById(type, itemsId) {
     const offersType = this.getOfferByType(type);
-    return offersType.offers.filter((item) => itemsId.find((id) =>item.id === type));
+    if (!offersType) {
+      return [];
+    }
+    return offersType.offers.filter((item) => itemsId.includes(item.id));
   }
+  
 
   getDestination() {
     return this.destination;

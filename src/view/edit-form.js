@@ -95,7 +95,7 @@ function createEditFormTemplate(point, offers, checkedOffers, destination) {
     <div class="event__type-wrapper">
       <label class="event__type  event__type-btn" for="event-type-toggle-1">
         <span class="visually-hidden">Choose event type</span>
-        <img class="event__type-icon" width="17" height="17" src="img/icons/${type}" alt="Event type icon">
+        <img class="event__type-icon" width="17" height="17" src="img/icons/${type}.png" alt="Event type icon">
       </label>
       <input class="event__type-toggle  visually-hidden" id="event-type-toggle-1" type="checkbox">
 
@@ -113,9 +113,10 @@ function createEditFormTemplate(point, offers, checkedOffers, destination) {
       </label>
       <input class="event__input  event__input--destination" id="event-destination-1" type="text" name="event-destination" value='${name}' list="destination-list-1">
       <datalist id="destination-list-1">
-        <option value="Amsterdam"></option>
-        <option value="Geneva"></option>
+        <option value="Rndml"></option>
+        <option value="Moscow"></option>
         <option value="Chamonix"></option>
+        <option value="BigCity"></option>
       </datalist>
     </div>
 

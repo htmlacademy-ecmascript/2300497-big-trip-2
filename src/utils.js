@@ -3,7 +3,7 @@ import duration from 'dayjs/plugin/duration';
 
 const POINTS_TYPE = ['taxi', 'bus', 'train', 'ship', 'drive', 'flight', 'check-in', 'sightseeing', 'restaurant'];
 
-const DATE_FORMAT = 'D MMMM';
+const DATE_FORMAT = 'MMM D';
 
 dayjs.extend(duration);
 

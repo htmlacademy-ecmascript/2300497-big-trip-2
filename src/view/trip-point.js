@@ -22,14 +22,14 @@ function createTripPointsTemplate(point, offers, destination) {
     <div class="event">
       <time class="event__date" datetime=${dateFrom}>${humanizeTaskDueDate(dateFrom, DATE_FORMAT.monthDay)}</time>
       <div class="event__type">
-        <img class="event__type-icon" width="42" height="42" src="img/icons/taxi.png" alt="Event type icon">
+        <img class="event__type-icon" width="42" height="42" src="img/icons/${type}.png" alt="Event type icon">
       </div>
       <h3 class="event__title">${type} ${name}</h3>
       <div class="event__schedule">
         <p class="event__time">
-          <time class="event__start-time" datetime=${dateFrom}>${humanizeTaskDueDate(dateFrom, DATE_FORMAT.monthDay)}</time>
+          <time class="event__start-time" datetime=${dateFrom}>${humanizeTaskDueDate(dateFrom, DATE_FORMAT.hours)}</time>
           &mdash;
-          <time class="event__end-time" datetime=${dateTo}>${humanizeTaskDueDate(dateTo, DATE_FORMAT.monthDay)}</time>
+          <time class="event__end-time" datetime=${dateTo}>${humanizeTaskDueDate(dateTo, DATE_FORMAT.hours)}</time>
         </p>
         <p class="event__duration">${getDifferenceInTime(dateFrom, dateTo)}</p>
       </div>
@@ -38,7 +38,7 @@ function createTripPointsTemplate(point, offers, destination) {
       </p>
       <h4 class="visually-hidden">Offers:</h4>
       <ul class="event__selected-offers">
-       ${offers.map((offer) => createOfferTemplate(offer)).join('')}
+       ${offers.map((offers) => createOfferTemplate(offers)).join('')}
       </ul>
       <button class="event__favorite-btn ${isFavorite && 'event__favorite-btn--active'}" type="button">
         <span class="visually-hidden">Add to favorite</span>

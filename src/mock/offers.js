@@ -11,20 +11,20 @@ const offers = [
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa32",
-        title: "Upgrade to a business class",
+        title: "hurry up",
         price: 56
       }
     ],
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa33",
-        title: "Upgrade to a business class",
+        title: "water",
         price: 250
       }
     ]
   },
   {
-    type: "Bus",
+    type: "bus",
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa34",
@@ -34,7 +34,7 @@ const offers = [
     ]
   },
   {
-    type: "Train",
+    type: "train",
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa35",
@@ -44,7 +44,7 @@ const offers = [
     ]
   },
   {
-    type: "Ship",
+    type: "ship",
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa36",
@@ -59,7 +59,7 @@ const offers = [
     ]
   },
   {
-    type: "Drive",
+    type: "drive",
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa37",
@@ -69,17 +69,36 @@ const offers = [
     ]
   },
   {
-    type: "Flight",
+    type: "flight",
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa38",
         title: "Upgrade to a business class",
-        price: 78
+        price: 790
+      },
+      {
+        id: "b4c3e4e6-9053-42ce-b747-e281314bab38",
+        title: "fresh meal",
+        price: 25
+      },{
+        id: "b4c3e4e6-9053-42ce-b747-e281314bac38",
+        title: "smoke",
+        price: 100
+      },
+      {
+        id: "b4c3e4e6-9053-42ce-b747-e281314bad38",
+        title: "clear view",
+        price: 310
+      },
+      {
+        id: "b4c3e4e6-9053-42ce-b747-e281314bae38",
+        title: "A/C",
+        price: 450
       }
     ]
   },
   {
-    type: "Check-in",
+    type: "check-in",
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa39",
@@ -89,7 +108,7 @@ const offers = [
     ]
   },
   {
-    type: "Sightseeing",
+    type: "sightseeing",
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa40",
@@ -99,7 +118,7 @@ const offers = [
     ]
   },
   {
-    type: "Restaurant",
+    type: "restaurant",
     offers: []
   },
 ];
