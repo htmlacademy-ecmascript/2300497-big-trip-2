@@ -1,7 +1,7 @@
-import SortForm from '../view/sort.js';
-import TripPointForm from '../view/trip-point.js';
-import EditForm from '../view/edit-form.js';
-import EditList from '../view/edit-list.js';
+import SortForm from '../view/sort-view.js';
+import TripPointForm from '../view/trip-point-view.js';
+import EditForm from '../view/edit-form-view.js';
+import EditList from '../view/edit-list-view.js';
 import { render } from '../render.js';
 
 export default class BoardPresenter {

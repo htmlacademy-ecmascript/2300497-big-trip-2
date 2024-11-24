@@ -1,5 +1,5 @@
 import {render} from './render.js';
-import FiltersForm from './view/filters.js';
+import FiltersForm from './view/filters-view.js';
 import BoardPresenter from './presenter/board-presenter.js';
 import TasksModel from './model/tasks-model.js';
 
