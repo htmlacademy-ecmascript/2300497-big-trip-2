@@ -48,6 +48,18 @@ const points = [
       "b4c3e4e6-9053-42ce-b747-e281314bac38"
     ],
     type: "flight"
+  },
+  {
+    id: "f4b62099-293f-4c3d-a702-94eec4a2808m",
+    basePrice: 1299,
+    dateFrom: "2020-05-03T22:55:56.845Z",
+    dateTo: "2020-05-17T11:22:13.375Z",
+    destination: "cfe416cq-10xa-ye10-8077-2fs9a01edcam",
+    isFavorite: true,
+    offers: [
+      "b4c3e4e6-9053-42ce-b747-e281314baa35"
+    ],
+    type: "train"
   }
 ];
 

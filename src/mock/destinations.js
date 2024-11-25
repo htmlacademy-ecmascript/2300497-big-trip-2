@@ -45,6 +45,17 @@ const destinations = [
         description: "Chamonix parliament building"
       }
     ]
+  },
+  {
+    id: "cfe416cq-10xa-ye10-8077-2fs9a01edcam",
+    description: "Canada, is a beautiful city, a true asian pearl, with crowded streets.",
+    name: "Canada",
+    pictures: [
+      {
+        src: "/img/photos/5.jpg",
+        description: "Canada parliament building"
+      }
+    ]
   }
 ];
 

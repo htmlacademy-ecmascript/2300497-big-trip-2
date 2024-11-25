@@ -28,7 +28,7 @@ const offers = [
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa34",
-        title: "Upgrade to a business class",
+        title: "buss type offer-1",
         price: 1220
       }
     ]
@@ -38,7 +38,7 @@ const offers = [
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa35",
-        title: "Upgrade to a business class",
+        title: "train type offer-1",
         price: 10
       }
     ]
@@ -48,12 +48,12 @@ const offers = [
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa36",
-        title: "Upgrade to a business class",
+        title: "ship type offer-1",
         price: 20
       },
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314bab36",
-        title: "Upgrade to a business class",
+        title: "ship type offer-2",
         price: 179
       },
     ]
@@ -63,7 +63,7 @@ const offers = [
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa37",
-        title: "Upgrade to a business class",
+        title: "drive type offer-1",
         price: 56
       }
     ]
@@ -102,7 +102,7 @@ const offers = [
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa39",
-        title: "Upgrade to a business class",
+        title: "check-in type offer-1",
         price: 780
       }
     ]
@@ -112,7 +112,7 @@ const offers = [
     offers: [
       {
         id: "b4c3e4e6-9053-42ce-b747-e281314baa40",
-        title: "Upgrade to a business class",
+        title: "sightseeing type offer-1",
         price: 200
       }
     ]
